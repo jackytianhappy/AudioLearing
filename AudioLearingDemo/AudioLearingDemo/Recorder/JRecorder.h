@@ -14,4 +14,8 @@
 
 - (void)startRecord;
 
+- (void)stopRecord;
+
+- (void)playSound;
+
 @end

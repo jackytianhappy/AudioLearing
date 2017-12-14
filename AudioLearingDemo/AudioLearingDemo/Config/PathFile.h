@@ -9,6 +9,6 @@
 #ifndef PathFile_h
 #define PathFile_h
 
-
+#define JRECORDER_FILE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingString:@"/JDemo.caf"]
 
 #endif /* PathFile_h */

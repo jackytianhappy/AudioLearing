@@ -62,6 +62,7 @@
 		CCC85CFA1FE2958200C3471D /* AudioLearingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CCC85D091FE2958300C3471D /* Info.plist */,
 				CCC85D171FE29FE100C3471D /* UI */,
 				CCC85D161FE29FD200C3471D /* Config */,
 				CCC85D121FE29DD300C3471D /* Recorder */,
@@ -112,7 +113,6 @@
 				CCC85CFC1FE2958300C3471D /* AppDelegate.m */,
 				CCC85D041FE2958300C3471D /* Assets.xcassets */,
 				CCC85D061FE2958300C3471D /* LaunchScreen.storyboard */,
-				CCC85D091FE2958300C3471D /* Info.plist */,
 				CCC85D0A1FE2958300C3471D /* main.m */,
 			);
 			path = BaseUICongif;

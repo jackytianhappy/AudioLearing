@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JRecorder.h"
 
 static const float kTableViewToppadding  = 200;
 
@@ -17,6 +18,8 @@ static const float kTableViewToppadding  = 200;
 
 @property (nonatomic, strong) UIButton *starRecordingBtn;
 @property (nonatomic, strong) UIButton *stopRecordingBtn;
+@property (nonatomic, strong) UIButton *playBtn;
+
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -43,11 +46,22 @@ static const float kTableViewToppadding  = 200;
     self.starRecordingBtn.hidden = YES;
     self.stopRecordingBtn.hidden = NO;
     
+    [[JRecorder sharedInstace] startRecord];
+    
 }
 
 - (void)_stopRecord{ //停止录音
     self.starRecordingBtn.hidden = NO;
     self.stopRecordingBtn.hidden = YES;
+    
+    [[JRecorder sharedInstace] stopRecord];
+}
+
+- (void)_play{
+    self.starRecordingBtn.hidden = NO;
+    self.stopRecordingBtn.hidden = YES;
+    
+    [[JRecorder sharedInstace] playSound];
 }
 
 - (void)_initData{
@@ -60,6 +74,8 @@ static const float kTableViewToppadding  = 200;
     [self.starRecordingBtn addTarget:self action:@selector(_record) forControlEvents:UIControlEventTouchUpInside];
     [self.stopRecordingBtn addTarget:self action:@selector(_stopRecord) forControlEvents:UIControlEventTouchUpInside];
     self.stopRecordingBtn.hidden = YES;
+    [self.playBtn addTarget:self action:@selector(_play) forControlEvents:UIControlEventTouchUpInside];
+    
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -114,5 +130,16 @@ static const float kTableViewToppadding  = 200;
     }
     return _stopRecordingBtn;
 }
+
+- (UIButton *)playBtn{
+    if (_playBtn == nil) {
+        _playBtn = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMaxX(self.stopRecordingBtn.frame)+ 20, CGRectGetMinY(self.stopRecordingBtn.frame), self.stopRecordingBtn.frame.size.width, self.stopRecordingBtn.frame.size.height)];
+        [_playBtn setTitle:@"播放" forState:UIControlStateNormal];
+        [_playBtn setBackgroundColor:[UIColor redColor]];
+        [self.view addSubview:_playBtn];
+    }
+    return _playBtn;
+}
+
 
 @end
