@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		CCC85CFD1FE2958300C3471D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85CFC1FE2958300C3471D /* AppDelegate.m */; };
 		CCC85D001FE2958300C3471D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85CFF1FE2958300C3471D /* ViewController.m */; };
-		CCC85D031FE2958300C3471D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC85D011FE2958300C3471D /* Main.storyboard */; };
 		CCC85D051FE2958300C3471D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC85D041FE2958300C3471D /* Assets.xcassets */; };
 		CCC85D081FE2958300C3471D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC85D061FE2958300C3471D /* LaunchScreen.storyboard */; };
 		CCC85D0B1FE2958300C3471D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D0A1FE2958300C3471D /* main.m */; };
 		CCC85D151FE29DF900C3471D /* JRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D141FE29DF900C3471D /* JRecorder.m */; };
+		CCC85D1C1FE2B58A00C3471D /* DivideSoundChanelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,6 @@
 		CCC85CFC1FE2958300C3471D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CCC85CFE1FE2958300C3471D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CCC85CFF1FE2958300C3471D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CCC85D021FE2958300C3471D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCC85D041FE2958300C3471D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCC85D071FE2958300C3471D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCC85D091FE2958300C3471D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +29,8 @@
 		CCC85D111FE29D7300C3471D /* PathFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathFile.h; sourceTree = "<group>"; };
 		CCC85D131FE29DF900C3471D /* JRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRecorder.h; sourceTree = "<group>"; };
 		CCC85D141FE29DF900C3471D /* JRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRecorder.m; sourceTree = "<group>"; };
+		CCC85D1A1FE2B58A00C3471D /* DivideSoundChanelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivideSoundChanelVC.h; sourceTree = "<group>"; };
+		CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivideSoundChanelVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +102,8 @@
 			children = (
 				CCC85CFE1FE2958300C3471D /* ViewController.h */,
 				CCC85CFF1FE2958300C3471D /* ViewController.m */,
-				CCC85D011FE2958300C3471D /* Main.storyboard */,
+				CCC85D1A1FE2B58A00C3471D /* DivideSoundChanelVC.h */,
+				CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */,
 			);
 			path = MainUI;
 			sourceTree = "<group>";
@@ -178,7 +180,6 @@
 			files = (
 				CCC85D081FE2958300C3471D /* LaunchScreen.storyboard in Resources */,
 				CCC85D051FE2958300C3471D /* Assets.xcassets in Resources */,
-				CCC85D031FE2958300C3471D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +193,7 @@
 				CCC85D001FE2958300C3471D /* ViewController.m in Sources */,
 				CCC85D0B1FE2958300C3471D /* main.m in Sources */,
 				CCC85D151FE29DF900C3471D /* JRecorder.m in Sources */,
+				CCC85D1C1FE2B58A00C3471D /* DivideSoundChanelVC.m in Sources */,
 				CCC85CFD1FE2958300C3471D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,14 +201,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCC85D011FE2958300C3471D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCC85D021FE2958300C3471D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCC85D061FE2958300C3471D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

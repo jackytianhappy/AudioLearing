@@ -8,12 +8,14 @@
 
 #import "ViewController.h"
 #import "JRecorder.h"
+#import "DivideSoundChanelVC.h"
 
 static const float kTableViewToppadding  = 200;
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>{
     NSArray *dataSource;
+    NSArray *dataSourceJumpPage;
 }
 
 @property (nonatomic, strong) UIButton *starRecordingBtn;
@@ -68,9 +70,16 @@ static const float kTableViewToppadding  = 200;
     dataSource = @[
                    @"分离左右声道"
                    ];
+    
+    dataSourceJumpPage = @[
+                          NSStringFromClass([DivideSoundChanelVC class])
+                           ];
 }
 
 - (void)_initUI{
+    self.title = @"Demo";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self.starRecordingBtn addTarget:self action:@selector(_record) forControlEvents:UIControlEventTouchUpInside];
     [self.stopRecordingBtn addTarget:self action:@selector(_stopRecord) forControlEvents:UIControlEventTouchUpInside];
     self.stopRecordingBtn.hidden = YES;
@@ -99,6 +108,12 @@ static const float kTableViewToppadding  = 200;
     cell.textLabel.text = dataSource[indexPath.row];
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc = [[NSClassFromString(dataSourceJumpPage[indexPath.row]) alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
