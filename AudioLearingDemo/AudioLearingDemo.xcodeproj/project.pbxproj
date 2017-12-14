@@ -62,17 +62,9 @@
 		CCC85CFA1FE2958200C3471D /* AudioLearingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CCC85D171FE29FE100C3471D /* UI */,
+				CCC85D161FE29FD200C3471D /* Config */,
 				CCC85D121FE29DD300C3471D /* Recorder */,
-				CCC85CFB1FE2958200C3471D /* AppDelegate.h */,
-				CCC85CFC1FE2958300C3471D /* AppDelegate.m */,
-				CCC85CFE1FE2958300C3471D /* ViewController.h */,
-				CCC85CFF1FE2958300C3471D /* ViewController.m */,
-				CCC85D011FE2958300C3471D /* Main.storyboard */,
-				CCC85D041FE2958300C3471D /* Assets.xcassets */,
-				CCC85D061FE2958300C3471D /* LaunchScreen.storyboard */,
-				CCC85D091FE2958300C3471D /* Info.plist */,
-				CCC85D0A1FE2958300C3471D /* main.m */,
-				CCC85D111FE29D7300C3471D /* PathFile.h */,
 			);
 			path = AudioLearingDemo;
 			sourceTree = "<group>";
@@ -84,6 +76,46 @@
 				CCC85D141FE29DF900C3471D /* JRecorder.m */,
 			);
 			path = Recorder;
+			sourceTree = "<group>";
+		};
+		CCC85D161FE29FD200C3471D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CCC85D111FE29D7300C3471D /* PathFile.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CCC85D171FE29FE100C3471D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CCC85D191FE2A00A00C3471D /* BaseUICongif */,
+				CCC85D181FE29FF800C3471D /* MainUI */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CCC85D181FE29FF800C3471D /* MainUI */ = {
+			isa = PBXGroup;
+			children = (
+				CCC85CFE1FE2958300C3471D /* ViewController.h */,
+				CCC85CFF1FE2958300C3471D /* ViewController.m */,
+				CCC85D011FE2958300C3471D /* Main.storyboard */,
+			);
+			path = MainUI;
+			sourceTree = "<group>";
+		};
+		CCC85D191FE2A00A00C3471D /* BaseUICongif */ = {
+			isa = PBXGroup;
+			children = (
+				CCC85CFB1FE2958200C3471D /* AppDelegate.h */,
+				CCC85CFC1FE2958300C3471D /* AppDelegate.m */,
+				CCC85D041FE2958300C3471D /* Assets.xcassets */,
+				CCC85D061FE2958300C3471D /* LaunchScreen.storyboard */,
+				CCC85D091FE2958300C3471D /* Info.plist */,
+				CCC85D0A1FE2958300C3471D /* main.m */,
+			);
+			path = BaseUICongif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
