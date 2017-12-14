@@ -123,7 +123,7 @@ static JRecorder *_instance;
     
     //设置播放器属性
     _audioPlayer.numberOfLoops = 0;// 不循环
-    _audioPlayer.volume = 0.5; // 音量
+    _audioPlayer.volume = 1; // 音量
     [_audioPlayer prepareToPlay];// 加载音频文件到缓存【这个函数在调用play函数时会自动调用】
     
     if(error){
