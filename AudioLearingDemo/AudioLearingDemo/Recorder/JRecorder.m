@@ -99,7 +99,7 @@ static JRecorder *_instance;
         
         NSError *error;
         _recorder = [[AVAudioRecorder alloc] initWithURL:[NSURL URLWithString:filePath] settings:recordingSettings error:&error];
-        _recorder.delegate = self;
+        //_recorder.delegate = self;
         _recorder.meteringEnabled = YES;// 监控声波
         if (error) {
             NSLog(@"创建录音机对象时发生错误，错误信息：%@",error);

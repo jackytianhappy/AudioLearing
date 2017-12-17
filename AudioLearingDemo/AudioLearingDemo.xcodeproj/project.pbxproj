@@ -14,6 +14,7 @@
 		CCC85D0B1FE2958300C3471D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D0A1FE2958300C3471D /* main.m */; };
 		CCC85D151FE29DF900C3471D /* JRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D141FE29DF900C3471D /* JRecorder.m */; };
 		CCC85D1C1FE2B58A00C3471D /* DivideSoundChanelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */; };
+		CCC85D201FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c in Sources */ = {isa = PBXBuildFile; fileRef = CCC85D1E1FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		CCC85D141FE29DF900C3471D /* JRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRecorder.m; sourceTree = "<group>"; };
 		CCC85D1A1FE2B58A00C3471D /* DivideSoundChanelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivideSoundChanelVC.h; sourceTree = "<group>"; };
 		CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivideSoundChanelVC.m; sourceTree = "<group>"; };
+		CCC85D1E1FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PCM16LE_Left_Right_Divide.c; sourceTree = "<group>"; };
+		CCC85D1F1FE366DF00C3471D /* PCM16LE_Left_Right_Divide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCM16LE_Left_Right_Divide.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +66,11 @@
 		CCC85CFA1FE2958200C3471D /* AudioLearingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CCC85D091FE2958300C3471D /* Info.plist */,
+				CCC85D1D1FE3665000C3471D /* 分离左右声道 */,
 				CCC85D171FE29FE100C3471D /* UI */,
 				CCC85D161FE29FD200C3471D /* Config */,
 				CCC85D121FE29DD300C3471D /* Recorder */,
+				CCC85D091FE2958300C3471D /* Info.plist */,
 			);
 			path = AudioLearingDemo;
 			sourceTree = "<group>";
@@ -118,6 +122,15 @@
 				CCC85D0A1FE2958300C3471D /* main.m */,
 			);
 			path = BaseUICongif;
+			sourceTree = "<group>";
+		};
+		CCC85D1D1FE3665000C3471D /* 分离左右声道 */ = {
+			isa = PBXGroup;
+			children = (
+				CCC85D1E1FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c */,
+				CCC85D1F1FE366DF00C3471D /* PCM16LE_Left_Right_Divide.h */,
+			);
+			path = "分离左右声道";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC85D001FE2958300C3471D /* ViewController.m in Sources */,
+				CCC85D201FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c in Sources */,
 				CCC85D0B1FE2958300C3471D /* main.m in Sources */,
 				CCC85D151FE29DF900C3471D /* JRecorder.m in Sources */,
 				CCC85D1C1FE2B58A00C3471D /* DivideSoundChanelVC.m in Sources */,
