@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JRecorder.h"
 #import "DivideSoundChanelVC.h"
+#import "AccelerateRateVC.h"
 
 static const float kTableViewToppadding  = 200;
 
@@ -68,11 +69,13 @@ static const float kTableViewToppadding  = 200;
 
 - (void)_initData{
     dataSource = @[
-                   @"分离左右声道"
+                   @"分离左右声道",
+                   @"加速左右声道速度"
                    ];
     
     dataSourceJumpPage = @[
-                          NSStringFromClass([DivideSoundChanelVC class])
+                          NSStringFromClass([DivideSoundChanelVC class]),
+                          NSStringFromClass([AccelerateRateVC class])
                            ];
 }
 

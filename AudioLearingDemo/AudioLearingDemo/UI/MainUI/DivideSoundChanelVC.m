@@ -52,6 +52,8 @@
     
     int m = simplest_pcm16le_split([JRECORDER_FILE_PATH cString], [JRECORDER_FILE_PATH_LEFT_PART cString], [JRECORDER_FILE_PATH_RIGHT_PART cString]);
     
+    NSLog(@"成功分离");
+    
 }
 
 - (void)_playLeftVoice{

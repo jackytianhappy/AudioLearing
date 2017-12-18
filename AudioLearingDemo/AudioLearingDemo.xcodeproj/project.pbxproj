@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC921B1D1FE6C0140002F897 /* PCM_acceleate_rate.c in Sources */ = {isa = PBXBuildFile; fileRef = CC921B1B1FE6C0140002F897 /* PCM_acceleate_rate.c */; };
+		CC921B201FE6C0720002F897 /* AccelerateRateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CC921B1F1FE6C0720002F897 /* AccelerateRateVC.m */; };
 		CCC85CFD1FE2958300C3471D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85CFC1FE2958300C3471D /* AppDelegate.m */; };
 		CCC85D001FE2958300C3471D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC85CFF1FE2958300C3471D /* ViewController.m */; };
 		CCC85D051FE2958300C3471D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC85D041FE2958300C3471D /* Assets.xcassets */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC921B1B1FE6C0140002F897 /* PCM_acceleate_rate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PCM_acceleate_rate.c; sourceTree = "<group>"; };
+		CC921B1C1FE6C0140002F897 /* PCM_acceleate_rate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCM_acceleate_rate.h; sourceTree = "<group>"; };
+		CC921B1E1FE6C0720002F897 /* AccelerateRateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccelerateRateVC.h; sourceTree = "<group>"; };
+		CC921B1F1FE6C0720002F897 /* AccelerateRateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccelerateRateVC.m; sourceTree = "<group>"; };
 		CCC85CF81FE2958200C3471D /* AudioLearingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioLearingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC85CFB1FE2958200C3471D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCC85CFC1FE2958300C3471D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC921B1A1FE6BFDB0002F897 /* 左右声道声速提高一倍 */ = {
+			isa = PBXGroup;
+			children = (
+				CC921B1B1FE6C0140002F897 /* PCM_acceleate_rate.c */,
+				CC921B1C1FE6C0140002F897 /* PCM_acceleate_rate.h */,
+			);
+			path = "左右声道声速提高一倍";
+			sourceTree = "<group>";
+		};
 		CCC85CEF1FE2958200C3471D = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,7 @@
 		CCC85CFA1FE2958200C3471D /* AudioLearingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CC921B1A1FE6BFDB0002F897 /* 左右声道声速提高一倍 */,
 				CCC85D1D1FE3665000C3471D /* 分离左右声道 */,
 				CCC85D171FE29FE100C3471D /* UI */,
 				CCC85D161FE29FD200C3471D /* Config */,
@@ -108,6 +124,8 @@
 				CCC85CFF1FE2958300C3471D /* ViewController.m */,
 				CCC85D1A1FE2B58A00C3471D /* DivideSoundChanelVC.h */,
 				CCC85D1B1FE2B58A00C3471D /* DivideSoundChanelVC.m */,
+				CC921B1E1FE6C0720002F897 /* AccelerateRateVC.h */,
+				CC921B1F1FE6C0720002F897 /* AccelerateRateVC.m */,
 			);
 			path = MainUI;
 			sourceTree = "<group>";
@@ -204,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC85D001FE2958300C3471D /* ViewController.m in Sources */,
+				CC921B1D1FE6C0140002F897 /* PCM_acceleate_rate.c in Sources */,
 				CCC85D201FE366DF00C3471D /* PCM16LE_Left_Right_Divide.c in Sources */,
+				CC921B201FE6C0720002F897 /* AccelerateRateVC.m in Sources */,
 				CCC85D0B1FE2958300C3471D /* main.m in Sources */,
 				CCC85D151FE29DF900C3471D /* JRecorder.m in Sources */,
 				CCC85D1C1FE2B58A00C3471D /* DivideSoundChanelVC.m in Sources */,

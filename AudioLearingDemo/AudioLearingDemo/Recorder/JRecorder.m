@@ -90,9 +90,12 @@ static JRecorder *_instance;
         //设置录音格式
         [recordingSettings setValue:[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
         //采样率 采样率必须要设为11025才能使转化成mp3格式后不会失真
-        [recordingSettings setValue :[NSNumber numberWithFloat:11025.0] forKey: AVSampleRateKey];//44100.0
+        [recordingSettings setValue :[NSNumber numberWithFloat:44100.0] forKey: AVSampleRateKey];//44100.0
         [recordingSettings setValue :[NSNumber numberWithInt:2] forKey: AVNumberOfChannelsKey];
-        // 采用浮点采样
+        
+        [recordingSettings setValue:[NSNumber numberWithInt:16] forKey:AVLinearPCMBitDepthKey];
+        
+        //采用浮点采样
         [recordingSettings setValue:@YES forKey:AVLinearPCMIsFloatKey];
         //音频质量,采样质量
         [recordingSettings setValue:[NSNumber numberWithInt:AVAudioQualityMin] forKey:AVEncoderAudioQualityKey];
